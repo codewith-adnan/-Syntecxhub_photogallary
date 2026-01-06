@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activello Theme - Interactive Version</title>
+
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Modernizr -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+
+    <style>
+        /* Inline overrides for static demo */
+        .flexslider {
+            margin-bottom: 20px;
+        }
+
+        .site-header {
+            margin-bottom: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .widget a {
+            cursor: pointer;
+        }
+
+        /* Make actionable links look clickable */
+    </style>
+</head>
+
+<body class="home blog">
+
+    <div id="page" class="hfeed site">
+
+        <header id="masthead" class="site-header" role="banner">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="site-navigation-inner col-sm-12">
+                            <div class="navbar-header">
+                                <button type="button" class="btn navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul id="menu-all-pages" class="nav navbar-nav">
+                                    <li class="active"><a href="#" onclick="filterPosts('All'); return false;">Home</a>
+                                    </li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                            aria-haspopup="true" aria-expanded="false">Features <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Full Width Page</a></li>
+                                            <li><a href="#">About Content</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" onclick="filterPosts('Travel'); return false;">Travel</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-search">
+                                <form action="#" method="get" onsubmit="return false;">
+                                    <input type="text" name="s" value="" placeholder="Search...">
+                                    <button type="submit" class="header-search-icon" name="submit" value="Search"><i
+                                            class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav><!-- .site-navigation -->
+
+            <div class="container">
+                <div id="logo">
+                    <h1 class="site-name">
+                        <a class="navbar-brand" href="index.html" rel="home">
+                            <i class="fa fa-diamond" style="color: #a161bf; margin-right: 10px;"></i>adnanzO
+                        </a>
+                    </h1>
+                    <div class="tagline">Designed to Be Seen_Crafted for the Modern Eye.</div>
+                </div><!-- end of #logo -->
+            </div>
+
+        </header><!-- #masthead -->
+
+        <div id="content" class="site-content">
+
+            <div class="top-section">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                                alt="Travel">
+                            <div class="flex-caption">
+                                <ul class="post-categories">
+                                    <li><a href="#" rel="category tag">Travel</a></li>
+                                </ul>
+                                <a href="#">
+                                    <h2 class="entry-title">Exploring the World</h2>
+                                </a>
+                                <div class="read-more"><a href="#">Read More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                                alt="Nature">
+                            <div class="flex-caption">
+                                <ul class="post-categories">
+                                    <li><a href="#" rel="category tag">LifeStyle</a></li>
+                                </ul>
+                                <a href="#">
+                                    <h2 class="entry-title">A Day in the Life</h2>
+                                </a>
+                                <div class="read-more"><a href="#">Read More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                                alt="Fashion">
+                            <div class="flex-caption">
+                                <ul class="post-categories">
+                                    <li><a href="#" rel="category tag">Fashion</a></li>
+                                </ul>
+                                <a href="#">
+                                    <h2 class="entry-title">Minimalist Trends</h2>
+                                </a>
+                                <div class="read-more"><a href="#">Read More</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                                alt="Photography">
+                            <div class="flex-caption">
+                                <ul class="post-categories">
+                                    <li><a href="#" rel="category tag">Photography</a></li>
+                                </ul>
+                                <a href="#">
+                                    <h2 class="entry-title">Capturing the Moment</h2>
+                                </a>
+                                <div class="read-more"><a href="#">Read More</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container main-content-area">
+                <div class="row">
+                    <div class="main-content-inner col-sm-12 col-md-8">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+                                <div class="article-container" id="posts-container">
+                                    <!-- Posts will be rendered here by JS -->
+                                </div><!-- .article-container -->
+
+                                <!-- Pagination -->
+                                <nav class="navigation paging-navigation" role="navigation">
+                                    <div class="nav-links">
+                                        <span class="page-numbers current">1</span>
+                                        <a class="page-numbers" href="#">2</a>
+                                        <a class="next page-numbers" href="#"><i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </nav>
+
+                            </main><!-- #main -->
+                        </div><!-- #primary -->
+                    </div><!-- .main-content-inner -->
+
+                    <div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+                        <div class="inner">
+
+                            <!-- Search Widget -->
+                            <aside id="search-2" class="widget widget_search">
+                                <form action="#" method="get" onsubmit="return false;">
+                                    <input type="text" name="s" value="" placeholder="Search...">
+                                </form>
+                            </aside>
+
+                            <!-- Categories Widget -->
+                            <aside id="activello_categories-2" class="widget activello-categories">
+                                <h3 class="widget-title">Categories</h3>
+                                <ul>
+                                    <li class="cat-item"><a onclick="filterPosts('Fashion')">Fashion</a> <span
+                                            class="cat-count">(4)</span></li>
+                                    <li class="cat-item"><a onclick="filterPosts('Lifestyle')">Lifestyle</a> <span
+                                            class="cat-count">(3)</span></li>
+                                    <li class="cat-item"><a onclick="filterPosts('Travel')">Travel</a> <span
+                                            class="cat-count">(4)</span></li>
+                                    <li class="cat-item"><a onclick="filterPosts('Photography')">Photography</a> <span
+                                            class="cat-count">(3)</span></li>
+                                </ul>
+                            </aside>
+
+                            <!-- Recent Posts -->
+                            <aside id="recent-posts-2" class="widget widget_recent_entries">
+                                <h3 class="widget-title">Recent Posts</h3>
+                                <ul>
+                                    <li><a onclick="filterPostsByTitle('The Art of Travel')">The Art of Travel</a></li>
+                                    <li><a onclick="filterPostsByTitle('Morning Routine')">Morning Routine</a></li>
+                                    <li><a onclick="filterPostsByTitle('Minimalist Design')">Minimalist Design</a></li>
+                                    <li><a onclick="filterPostsByTitle('Coffee Culture')">Coffee Culture</a></li>
+                                </ul>
+                            </aside>
+
+                            <!-- Archives -->
+                            <aside id="archives-2" class="widget widget_archive">
+                                <h3 class="widget-title">Archives</h3>
+                                <ul>
+                                    <li><a onclick="filterPostsByDate('January 2024')">January 2024</a></li>
+                                    <li><a onclick="filterPostsByDate('December 2023')">December 2023</a></li>
+                                </ul>
+                            </aside>
+
+                        </div>
+                    </div><!-- #secondary -->
+
+                </div>
+            </div>
+        </div><!-- #content -->
+
+        <div id="footer-area">
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="site-info container">
+                    <div class="row">
+                        <!-- Social Icons -->
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+
+                        <div class="copyright col-md-12">
+                            &copy; 2026 adnanzO. All Rights Reserved. <br>
+                            Theme by <a href="https://colorlib.com/" target="_blank">Colorlib</a> Powered by <a
+                                href="https://wordpress.org/" target="_blank">WordPress</a>
+                        </div>
+                    </div>
+                </div><!-- .site-info -->
+
+                <button class="scroll-to-top"><i class="fa fa-angle-up"></i></button><!-- .scroll-to-top -->
+            </footer><!-- #colophon -->
+        </div>
+
+    </div><!-- #page -->
+
+    <!-- JS Dependencies -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Note: jQuery might not be in vendor, checking assets.. -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/flexslider.min.js"></script>
+    <script src="assets/js/functions.min.js"></script>
+
+    <script>
+        // Manual init for slider
+        jQuery(window).load(function () {
+            if (jQuery('.flexslider').length && typeof jQuery.fn.flexslider === 'function') {
+                jQuery('.flexslider').flexslider({
+                    animation: "slide",
+                    controlNav: true,
+                    directionNav: true,
+                    prevText: "",
+                    nextText: "",
+                });
+            }
+        });
+
+        // --- MOCK DATABASE AND FILTERING LOGIC ---
+
+        const postsData = [
+            // --- Travel (4 posts, Northern Areas images) ---
+            {
+                title: "The Art of Travel",
+                category: "Travel",
+                date: "January 15, 2024",
+                excerpt: "Discover the beauty of exploring new destinations and cultures. Travel opens your mind and soul.",
+                img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Mountains/Northern
+            },
+            {
+                title: "Northern Expeditions",
+                category: "Travel",
+                date: "January 14, 2024",
+                excerpt: "Trekking through the serene valleys of the north. A journey like no other.",
+                img: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Lake/Mountains
+            },
+            {
+                title: "Mountain Silent Peaks",
+                category: "Travel",
+                date: "January 12, 2024",
+                excerpt: "The silence of the snowy peaks brings a peace that cannot be found elsewhere.",
+                img: "https://images.unsplash.com/photo-1483921020237-603db42bf825?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Snow Mountains
+            },
+            {
+                title: "Valley of Dreams",
+                category: "Travel",
+                date: "December 28, 2023",
+                excerpt: "Green lush meadows surrounded by giant cliffs. A true paradise on earth.",
+                img: "https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Valley
+            },
+
+            // --- Lifestyle (3 posts) ---
+            {
+                title: "Morning Routine",
+                category: "Lifestyle",
+                date: "January 10, 2024",
+                excerpt: "How you start your morning sets the tone for the entire day. Build habits that last.",
+                img: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80"
+            },
+            {
+                title: "Coffee Culture",
+                category: "Lifestyle",
+                date: "December 20, 2023",
+                excerpt: "From bean to cup, explore the rich history and modern culture of coffee brewing.",
+                img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80"
+            },
+            {
+                title: "Healthy Living",
+                category: "Lifestyle",
+                date: "December 10, 2023",
+                excerpt: "Balancing work, life, and health in a busy modern world.",
+                img: "https://images.unsplash.com/photo-1544367563-12123d8975bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Yoga/Lifestyle
+            },
+
+            // --- Fashion (4 posts) ---
+            {
+                title: "Minimalist Design",
+                category: "Fashion",
+                date: "January 05, 2024",
+                excerpt: "Less is more. Explore the trends of minimalism in modern fashion and lifestyle.",
+                img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80"
+            },
+            {
+                title: "Winter Fashion",
+                category: "Fashion",
+                date: "December 15, 2023",
+                excerpt: "Stay warm and stylish this winter with our top picks for the season.",
+                img: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80"
+            },
+            {
+                title: "Street Style",
+                category: "Fashion",
+                date: "November 25, 2023",
+                excerpt: "Urban fashion trends taking over the streets this year.",
+                img: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Street fashion
+            },
+            {
+                title: "Summer Collection",
+                category: "Fashion",
+                date: "June 15, 2023",
+                excerpt: "A look back at the best summer outfits.",
+                img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Summer fashion
+            },
+
+            // --- Photography (3 posts) ---
+            {
+                title: "Urban Photography",
+                category: "Photography",
+                date: "January 12, 2024",
+                excerpt: "Capturing the soul of the city through your lens. Tips for urban photographers.",
+                img: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80"
+            },
+            {
+                title: "Landscape Mastery",
+                category: "Photography",
+                date: "December 05, 2023",
+                excerpt: "How to capture the vastness of nature in a single frame.",
+                img: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Landscape
+            },
+            {
+                title: "Portrait Guides",
+                category: "Photography",
+                date: "November 10, 2023",
+                excerpt: "Lighting and posing techniques for perfect portraits.",
+                img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Portrait
+            }
+        ];
+
+        const container = document.getElementById('posts-container');
+
+        function renderPosts(filteredPosts) {
+            container.innerHTML = '';
+
+            if (filteredPosts.length === 0) {
+                container.innerHTML = '<p>No posts found.</p>';
+                return;
+            }
+
+            filteredPosts.forEach(post => {
+                const article = `
+            <article class="post type-post status-publish format-standard has-post-thumbnail hentry">
+                <div class="blog-item-wrap">
+                    <div class="post-inner-content">
+                        <header class="entry-header page-header">
+                            <div class="activello-categories">
+                                <ul class="single-category"><li><a href="#" rel="category tag">${post.category}</a></li></ul>
+                            </div>
+                            <h2 class="entry-title"><a href="#" rel="bookmark">${post.title}</a></h2>
+                            <div class="entry-meta">
+                                <span class="posted-on">Posted on <a href="#" rel="bookmark"><time class="entry-date published">${post.date}</time></a></span>
+                                <span class="byline"> by <span class="author vcard"><a class="url fn n" href="#">Admin</a></span></span>
+                            </div>
+                        </header>
+
+                        <a href="#" title="${post.title}">
+                            <img width="710" height="335" src="${post.img}" class="single-featured wp-post-image" alt="${post.title}">
+                        </a>
+
+                        <div class="entry-content">
+                            <p>${post.excerpt}</p>
+                            <div class="read-more">
+                                <a href="#" title="${post.title}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            `;
+                container.innerHTML += article;
+            });
+        }
+
+        // -- Filter Functions --
+
+        function filterPosts(category) {
+            if (category === 'All') {
+                renderPosts(postsData);
+            } else {
+                const filtered = postsData.filter(post => post.category === category);
+                renderPosts(filtered);
+            }
+        }
+
+        function filterPostsByTitle(title) {
+            const filtered = postsData.filter(post => post.title === title);
+            renderPosts(filtered);
+        }
+
+        function filterPostsByDate(dateStr) {
+            // Simple string matching for demo purposes
+            // "January 2024" should match "January 15, 2024" etc.
+            const filtered = postsData.filter(post => post.date.includes(dateStr.split(' ')[0]));
+            renderPosts(filtered);
+        }
+
+        // Initial Render
+        renderPosts(postsData);
+
+    </script>
+
+</body>
+
+</html>
