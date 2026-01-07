@@ -364,7 +364,7 @@
                 category: "Lifestyle",
                 date: "December 10, 2023",
                 excerpt: "Balancing work, life, and health in a busy modern world.",
-                img: "https://images.unsplash.com/photo-1544367563-12123d8975bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Yoga/Lifestyle
+                img: "https://unsplash.com/photos/woman-doing-yoga-meditation-on-brown-parquet-flooring-NTyBbu66_SI" // Yoga/Lifestyle
             },
 
             // --- Fashion (4 posts) ---
@@ -420,6 +420,40 @@
                 img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=710&q=80" // Portrait
             }
         ];
+
+        // --- NEW POSTS ADDED ---
+        const newPosts = [
+            // Travel (5 new)
+            { title: "Hidden Gems of Bali", category: "Travel", date: "March 10, 2024", excerpt: "Explore the secret waterfalls and temples of Bali.", img: "https://loremflickr.com/710/335/travel?random=101" },
+            { title: "Swiss Alps Adventure", category: "Travel", date: "March 08, 2024", excerpt: "Hiking through the majestic peaks of Switzerland.", img: "https://loremflickr.com/710/335/travel?random=102" },
+            { title: "Kyoto Cherry Blossoms", category: "Travel", date: "March 05, 2024", excerpt: "Experience the magical sakura season in Japan.", img: "https://loremflickr.com/710/335/travel?random=103" },
+            { title: "Desert Safari Dubai", category: "Travel", date: "February 28, 2024", excerpt: "A thrilling ride across the golden dunes.", img: "https://loremflickr.com/710/335/travel?random=104" },
+            { title: "Icelandic Northern Lights", category: "Travel", date: "February 25, 2024", excerpt: "Chasing the aurora borealis in the frozen north.", img: "https://loremflickr.com/710/335/travel?random=105" },
+
+            // Lifestyle (5 new)
+            { title: "Mindful Meditation", category: "Lifestyle", date: "March 12, 2024", excerpt: "Finding inner peace in a chaotic world.", img: "https://loremflickr.com/710/335/lifestyle?random=201" },
+            { title: "Workspace Organization", category: "Lifestyle", date: "March 09, 2024", excerpt: "Boost your productivity with a clean desk setup.", img: "https://loremflickr.com/710/335/lifestyle?random=202" },
+            { title: "Vegan Cooking 101", category: "Lifestyle", date: "March 01, 2024", excerpt: "Delicious plant-based recipes for beginners.", img: "https://loremflickr.com/710/335/lifestyle?random=203" },
+            { title: "Digital Detox Guide", category: "Lifestyle", date: "February 20, 2024", excerpt: "Reconnecting with the real world unplugged.", img: "https://loremflickr.com/710/335/lifestyle?random=204" },
+            { title: "Sustainable Living", category: "Lifestyle", date: "February 15, 2024", excerpt: "Small changes to reduce your carbon footprint.", img: "https://loremflickr.com/710/335/lifestyle?random=205" },
+
+            // Fashion (5 new)
+            { title: "Spring Collection 2024", category: "Fashion", date: "March 14, 2024", excerpt: "Fresh looks for the blooming season.", img: "https://loremflickr.com/710/335/fashion?random=301" },
+            { title: "Sustainable Fabrics", category: "Fashion", date: "March 07, 2024", excerpt: "Why eco-friendly materials are the future of fashion.", img: "https://loremflickr.com/710/335/fashion?random=302" },
+            { title: "Vintage Revival", category: "Fashion", date: "March 02, 2024", excerpt: "Thriving trends from the 80s and 90s.", img: "https://loremflickr.com/710/335/fashion?random=303" },
+            { title: "Accessories Guide", category: "Fashion", date: "February 22, 2024", excerpt: "Elevate your outfit with the perfect add-ons.", img: "https://loremflickr.com/710/335/fashion?random=304" },
+            { title: "Monochrome Magic", category: "Fashion", date: "February 10, 2024", excerpt: "Styling single-color outfits with elegance.", img: "https://loremflickr.com/710/335/fashion?random=305" },
+
+            // Photography (5 new)
+            { title: "Golden Hour Tips", category: "Photography", date: "March 11, 2024", excerpt: "Mastering the best light of the day.", img: "https://loremflickr.com/710/335/photography?random=401" },
+            { title: "Macro World", category: "Photography", date: "March 04, 2024", excerpt: "Discovering the unseen details of nature.", img: "https://loremflickr.com/710/335/photography?random=402" },
+            { title: "Black and White Art", category: "Photography", date: "February 26, 2024", excerpt: "Creating drama and emotion without color.", img: "https://loremflickr.com/710/335/photography?random=403" },
+            { title: "Action Sports Shots", category: "Photography", date: "February 18, 2024", excerpt: "Freezing the moment in high-speed events.", img: "https://loremflickr.com/710/335/photography?random=404" },
+            { title: "Drone Perspectives", category: "Photography", date: "February 12, 2024", excerpt: "Seeing the world from a bird's eye view.", img: "https://loremflickr.com/710/335/photography?random=405" }
+        ];
+
+        // Combine arrays
+        postsData.push(...newPosts);
 
         const container = document.getElementById('posts-container');
 
